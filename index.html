@@ -3,32 +3,109 @@
 
 <head>
 <meta charset="UTF-8">
-<title>PortfolioHUB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PortfolioHUB - Cláudio Macedo</title>
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family: Arial;
-    background:#f4f4f4;
-    padding:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
 }
 
 .card{
     background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-a{
-    text-decoration:none;
-    color:blue;
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+    border-bottom:3px solid #1e3a8a;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.projeto{
+    margin-bottom:40px;
+}
+
+.projeto h3{
+    margin-bottom:15px;
+    color:#0f172a;
 }
 
 img{
-    width:600px;
-    margin-top:15px;
-    border-radius:10px;
+    width:100%;
+    max-width:900px;
+    display:block;
+    margin:auto;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.botao{
+    display:inline-block;
+    background:#1e3a8a;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:#0f172a;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#666;
+    margin-top:40px;
 }
 
 </style>
@@ -37,34 +114,55 @@ img{
 
 <body>
 
-<h1>Portfólio Cláudio Macedo</h1>
+<header>
+    <h1>Cláudio Macedo</h1>
 
-<p>Projetos acadêmicos e pessoais.Estou me formando em Ciência Da Computação e quero me aprofundar na area de IA</p>
+    <p>
+        Estudante de Ciência da Computação com interesse em
+        Inteligência Artificial, desenvolvimento de software e
+        criação de soluções tecnológicas inovadoras.
+    </p>
+</header>
 
-<div class="card">
-<h2>Projetos</h2>
+<div class="container">
 
-<p>Projeto EasyBorrow</p>
+    <div class="card">
 
-<img src="Projetos/Captura de tela 2026-03-28 195126.png">
+        <h2>Projetos</h2>
 
-<p>Projeto SportScore</p>
+        <div class="projeto">
+            <h3>EasyBorrow</h3>
 
-<img src="Projetos/Captura de tela 2026-03-28 200244.png">
+            <img src="Projetos/Captura de tela 2026-03-28 195126.png" alt="Projeto EasyBorrow">
+        </div>
+
+        <div class="projeto">
+            <h3>SportScore</h3>
+
+            <img src="Projetos/Captura de tela 2026-03-28 200244.png" alt="Projeto SportScore">
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Currículo</h2>
+
+        <p style="margin-bottom:20px;">
+            Clique abaixo para visualizar meu currículo completo.
+        </p>
+
+        <a class="botao" href="docs/Currículo Cláudio.pdf" target="_blank">
+            Abrir Currículo
+        </a>
+
+    </div>
 
 </div>
 
-<div class="card">
-
-<h2>Currículo</h2>
-
-<p>
-<a href="docs/Currículo Cláudio.pdf">
-Abrir Currículo
-</a>
-</p>
-
-</div>
+<footer>
+    © 2026 Cláudio Macedo • PortfolioHUB
+</footer>
 
 </body>
 </html>
